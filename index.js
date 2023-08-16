@@ -17,11 +17,9 @@ app.use(session({
 }))
 
 app.use(express.urlencoded({extended: false}));
-app.use('/login', rotaLogin)
 app.use(express.static('./publico'))
+app.use('/login', rotaLogin)
 app.use(autenticar,express.static('./privado'));
-
-
 
 
 app.listen(porta, host, () => {
