@@ -1,0 +1,23 @@
+{
+  "name": "aula01ppiadsead",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfsgoncalves/AULA01PPIADSEAD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfsgoncalves/AULA01PPIADSEAD/issues"
+  },
+  "homepage": "https://github.com/rfsgoncalves/AULA01PPIADSEAD#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}
