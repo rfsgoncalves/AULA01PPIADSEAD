@@ -9,6 +9,7 @@ rotaLogin.get("/", (requisicao, resposta) => {
     const usuario = requisicao.body.usuario;
     const senha = requisicao.body.senha;
     if (usuario && senha && usuario==='Renato' && senha === '123') {
+        requisicao.session.usuarioLogado = true;
         resposta.redirect('/cadastroCliente.html');
     } else {
         resposta.send("<p>Falha no login!</p><br/><button onclick='history.back()'>Tentar novamente</button>")

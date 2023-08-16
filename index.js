@@ -17,9 +17,10 @@ app.use(session({
 }))
 
 app.use(express.urlencoded({extended: false}));
+app.use('/login', rotaLogin)
 app.use(express.static('./publico'))
 app.use(autenticar,express.static('./privado'));
-app.use('/login', rotaLogin)
+
 
 
 
