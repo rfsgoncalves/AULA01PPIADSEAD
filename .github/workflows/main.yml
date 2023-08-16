@@ -20,8 +20,8 @@ jobs:
 
   producao-deploy:
     env:
-      USUARIO: aluno22-ppiadsead
-      SENHA: aluno22-ppiadsead
+      USUARIO: aluno23-ppiadsead
+      SENHA: aluno23-ppiadsead
     if: github.ref == 'refs/heads/main'
     needs: [deploy-init]
     runs-on: ubuntu-latest
